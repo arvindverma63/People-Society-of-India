@@ -349,7 +349,63 @@
                 </div>
             </div>
         </section>
-        <!-- /Call To Action Section -->
+
+        <style>
+              .map-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .zoom-buttons {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .zoom-buttons button {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .zoom-buttons button:hover {
+            background-color: #0056b3;
+        }
+        </style>
+        <div class="container my-4">
+            <h3 class="text-center mb-3">Real-Time Map</h3>
+            <div class="map-container">
+                <!-- Map will go here -->
+                <div id="map"></div>
+                <!-- Zoom Buttons -->
+                <div class="zoom-buttons">
+                    <button id="zoom-in">+</button>
+                    <button id="zoom-out">-</button>
+                </div>
+            </div>
+        </div>
+
 
     </main>
     @include('website.partials.footer')

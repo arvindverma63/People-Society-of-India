@@ -19,6 +19,10 @@
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 
 <!-- Main CSS File -->
 <link href="assets/css/main.css" rel="stylesheet">
