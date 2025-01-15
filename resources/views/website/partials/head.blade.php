@@ -5,7 +5,7 @@
 <!-- ===============================================-->
 <!--    Document Title-->
 <!-- ===============================================-->
-<title>Aranyak | Landing Page Template</title>
+<title>People Society of Inida</title>
 
 <!-- ===============================================-->
 <!--    Favicons-->
