@@ -1,32 +1,24 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Index - AgriCulture Bootstrap Template</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
 
-<!-- ===============================================-->
-<!--    Document Title-->
-<!-- ===============================================-->
-<title>People Society of Inida</title>
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<!-- ===============================================-->
-<!--    Favicons-->
-<!-- ===============================================-->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/favicons/apple-touch-icon.png') }}?v={{ time() }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png') }}?v={{ time() }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png') }}?v={{ time() }}">
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicons/favicon.ico') }}?v={{ time() }}">
-<link rel="manifest" href="{{ asset('assets/img/favicons/manifest.json') }}?v={{ time() }}">
-<meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/mstile-150x150.png') }}?v={{ time() }}">
-<meta name="theme-color" content="#ffffff">
-<script src="{{ asset('assets/js/config.js') }}?v={{ time() }}"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
 
-<!-- ===============================================-->
-<!--    Stylesheets-->
-<!-- ===============================================-->
-<link rel="stylesheet" href="{{ asset('vendors/swiper/swiper-bundle.min.css') }}?v={{ time() }}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="{{ asset('assets/css/theme.css') }}?v={{ time() }}" rel="stylesheet" id="style-default">
-<link href="{{ asset('assets/css/user-rtl.css') }}?v={{ time() }}" rel="stylesheet" id="user-style-rtl">
-<link href="{{ asset('assets/css/user.css') }}?v={{ time() }}" rel="stylesheet" id="user-style-default">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet">
