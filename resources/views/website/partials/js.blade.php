@@ -14,31 +14,72 @@
     // Initialize the map
     var map = L.map('map', {
         center: [26.4499, 80.3319], // Center of Kanpur
-        zoom: 13, // Zoom level
-        zoomControl: false // Disable zoom controls
+        zoom: 13,
+        zoomControl: true
     });
 
-    // Add a tile layer for the background
+    // Add tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    // Kanpur locations with latitude, longitude, and label
-    var locations = [
-        { lat: 26.4499, lng: 80.3319, label: "Kanpur Central Railway Station" },
-        { lat: 26.4724, lng: 80.3247, label: "Allen Forest Zoo (Kanpur Zoo)" },
-        { lat: 26.4691, lng: 80.3432, label: "JK Temple" },
-        { lat: 26.4525, lng: 80.3130, label: "Nana Rao Park" },
-        { lat: 26.4638, lng: 80.3170, label: "Moti Jheel" }
+    // Kanpur locations with more temp data
+    var locations = [{
+            lat: 26.4499,
+            lng: 80.3319,
+            label: "Kanpur Central Railway Station"
+        },
+        {
+            lat: 26.4724,
+            lng: 80.3247,
+            label: "Allen Forest Zoo"
+        },
+        {
+            lat: 26.4691,
+            lng: 80.3432,
+            label: "JK Temple"
+        },
+        {
+            lat: 26.4525,
+            lng: 80.3130,
+            label: "Nana Rao Park"
+        },
+        {
+            lat: 26.4638,
+            lng: 80.3170,
+            label: "Moti Jheel"
+        },
+        {
+            lat: 26.4449,
+            lng: 80.3310,
+            label: "Z Square Mall"
+        },
+        {
+            lat: 26.4600,
+            lng: 80.3525,
+            label: "Phool Bagh"
+        },
+        {
+            lat: 26.4369,
+            lng: 80.3495,
+            label: "Kanpur Memorial Church"
+        },
+        {
+            lat: 26.5000,
+            lng: 80.3000,
+            label: "Ganga Barrage"
+        },
+        {
+            lat: 26.4200,
+            lng: 80.3500,
+            label: "Green Park Stadium"
+        }
     ];
 
-    // Add markers to the map
+    // Add pin markers to the map
     locations.forEach(location => {
-        L.circleMarker([location.lat, location.lng], {
-            color: '#3388ff', // Circle color
-            fillColor: '#3388ff',
-            fillOpacity: 0.8,
-            radius: 10 // Size of the marker
-        }).addTo(map).bindPopup(location.label);
+        L.marker([location.lat, location.lng]) // default pin icon
+            .addTo(map)
+            .bindPopup("<b>" + location.label + "</b>");
     });
 </script>
